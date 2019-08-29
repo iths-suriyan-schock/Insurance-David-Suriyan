@@ -1,0 +1,36 @@
+body {
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    
+}
+header {
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 250px 250px;
+    grid-template-areas: 
+    "left topright"
+    "left bottomright"
+}
+.wegotu {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 500px;
+    background-color: lightblue;
+    grid-area: left;
+}
+.learnmore {
+    height: 250px;
+    width: 500px;
+    background-color: orange;
+    grid-area: topright;
+}
+.jointoday {
+    height: 250px;
+    width: 500px;
+    background-color: rgb(214, 181, 119);
+    grid-area: bottomright;
+}
+
