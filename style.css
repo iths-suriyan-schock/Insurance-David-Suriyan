@@ -8,7 +8,7 @@ header {
     max-width: 1000px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 250px 250px;
+    grid-template-rows: 300px 300px;
     grid-template-areas: 
     "left topright"
     "left bottomright"
@@ -16,21 +16,178 @@ header {
 .wegotu {
     display: flex;
     flex-direction: column;
-    height: 500px;
+    background-image: url("./images/family2.png");
+    background-size: cover;
+    height: 600px;
     width: 500px;
-    background-color: lightblue;
     grid-area: left;
+    justify-content: center;
+    align-items: center;    
 }
 .learnmore {
-    height: 250px;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
     width: 500px;
-    background-color: orange;
+    background-color: rgb(252, 135, 40);
     grid-area: topright;
+    justify-content: center;
+    align-items: center;
 }
 .jointoday {
-    height: 250px;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
     width: 500px;
-    background-color: rgb(214, 181, 119);
+    background-color: rgb(252, 197, 46);
     grid-area: bottomright;
+    justify-content: center;
+    align-items: center;
+}
+.text1 {
+    width: 300px;
+    height: 250px;
+    margin-bottom: 180px;
+}
+.text1 > h1 {
+    font-family: Times, serif;
+    font-size: 45px;
+    line-height: 1.0;
+    margin: 0px;
+}
+ p {
+    color: rgb(71, 71, 71);
+    margin-top: 15px;
+    line-height: 1.6;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* hitta rätt font sen */
 }
 
+span {
+color: white;
+}
+
+button {
+    margin-top: 40px;
+    border-radius: 20px;
+    height: 40px;
+    width: 140px;
+    -webkit-box-shadow: 0px 4px 0px -2px rgba(145,145,189,1);
+    -moz-box-shadow: 0px 4px 0px -2px rgba(145,145,189,1);
+    box-shadow: 0px 4px 0px -2px rgba(145,145,189,1);
+}
+
+.learnmore > h1{
+    color: white;
+    font-family: Times, serif;
+    font-size: 32px;
+    line-height: 1.0;
+    margin: 0px;
+
+}
+
+.jointoday > h1{
+    color: white;
+    font-family: Times, serif;
+    font-size: 32px;
+    line-height: 1.0;
+    margin: 0px;
+}
+
+.learnmore > p, .jointoday > p{
+    font-size: 13px;  
+}
+nav {
+    background-color: rgb(255, 255, 255);
+    height: 75px;
+    margin: 0px;
+    /* display: flex;
+    justify-content: center; */
+}
+ul {
+    padding-left: 0px;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 0px;
+
+}
+li { 
+    margin-top: 25px;
+    align-items: center;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+a { 
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(139, 139, 139);
+}
+.middle1 {
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(151, 150, 150);
+    height: 650px;
+    width: 1000px;
+}
+.middle2 {
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(255, 177, 8);
+    height: 650px;
+    width: 1000px;
+}
+.middle1left {
+    display: flex;
+    justify-content: center;
+    width: 498px;
+    height: 650px;
+
+}
+.middle1right {
+    display: flex;
+    justify-content: center;
+    width: 498px;
+    height: 650px;
+}
+
+.middletextleft {
+    align-items: center;
+    font-family: Times, serif;
+    font-size: 45px;
+    color: white;
+    line-height: 1.0;
+    margin: 40px 0px 0px 70px;
+    width: 400px;
+    height: 250px;
+}
+
+.middletextright {
+    margin-top: 85px;
+    width: 300px;
+    height: 250px;
+}
+
+.middlebot{
+    margin: 170px 0px 0px 0px;
+    width: 565px;
+    height: 565px;
+    text-align: center;
+}
+
+
+.middlebot > h1{
+    color: white;
+    font-family: Times, serif;
+    font-size: 45px;
+    line-height: 1.0;
+    margin-bottom: 40px;
+}
