@@ -3,6 +3,9 @@ body {
     display: flex;
     justify-content: center;
     
+} 
+.container {
+    margin: 0px;
 }
 header {
     max-width: 1000px;
@@ -22,14 +25,15 @@ header {
     width: 500px;
     grid-area: left;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
+    
 }
 .learnmore {
     display: flex;
     flex-direction: column;
     height: 300px;
     width: 500px;
-    background-color: rgb(252, 135, 40);
+    background-color: rgb(241, 121, 73);
     grid-area: topright;
     justify-content: center;
     align-items: center;
@@ -39,7 +43,7 @@ header {
     flex-direction: column;
     height: 300px;
     width: 500px;
-    background-color: rgb(252, 197, 46);
+    background-color: rgb(250, 177, 49);
     grid-area: bottomright;
     justify-content: center;
     align-items: center;
@@ -56,7 +60,7 @@ header {
     margin: 0px;
 }
  p {
-    color: rgb(71, 71, 71);
+    color: rgba(0, 0, 0, 0.5);
     margin-top: 15px;
     line-height: 1.6;
     font-weight: bold;
@@ -68,7 +72,6 @@ header {
 span {
 color: white;
 }
-
 button {
     margin-top: 40px;
     border-radius: 20px;
@@ -77,6 +80,7 @@ button {
     -webkit-box-shadow: 0px 4px 0px -2px rgba(145,145,189,1);
     -moz-box-shadow: 0px 4px 0px -2px rgba(145,145,189,1);
     box-shadow: 0px 4px 0px -2px rgba(145,145,189,1);
+    font-family: 'Fira Sans', sans-serif;
 }
 
 .learnmore > h1{
@@ -100,11 +104,15 @@ button {
     font-size: 13px;  
 }
 nav {
+    width: 1000px;
     background-color: rgb(255, 255, 255);
     height: 75px;
     margin: 0px;
     /* display: flex;
     justify-content: center; */
+}
+.homebutton a {
+    color: black;
 }
 ul {
     padding-left: 0px;
@@ -117,6 +125,7 @@ ul {
 
 }
 li { 
+    padding:0px;
     margin-top: 25px;
     align-items: center;
     text-decoration: none;
@@ -141,20 +150,23 @@ a {
     justify-content: center;
     margin: 0px;
     padding: 0px;
-    background-color: rgb(255, 177, 8);
+    background-color: rgb(250, 177, 49);
     height: 650px;
     width: 1000px;
 }
 .middle1left {
     display: flex;
-    justify-content: center;
+    box-sizing: border-box;
+    padding-left: 50px;
     width: 498px;
     height: 650px;
 
 }
 .middle1right {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    padding-left: 50px;
     width: 498px;
     height: 650px;
 }
@@ -170,6 +182,7 @@ a {
     height: 250px;
 }
 
+
 .middletextright {
     margin-top: 85px;
     width: 300px;
@@ -179,7 +192,7 @@ a {
 .middlebot{
     margin: 170px 0px 0px 0px;
     width: 565px;
-    height: 565px;
+    height: 400px;
     text-align: center;
 }
 
@@ -190,4 +203,281 @@ a {
     font-size: 45px;
     line-height: 1.0;
     margin-bottom: 40px;
+}
+.threecards {
+    box-sizing: border-box;
+    margin: 0px;
+    width: 1000px;
+    height: 0px;
+    /* background-color: rgba(221, 221, 221, 0.5); */
+    position: relative;
+    bottom: 655px ;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+
+
+}
+.card {
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 5px;
+    align-self: center;
+    width: 250px;
+    height: 300px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.card p {
+    font-size: 11px;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    bottom: 15px;
+    text-align: center;
+    width: 200px;
+    align-self: center;
+}
+.card h2 {
+    margin: 0px;
+    font-size: 15px;
+    position: relative;
+    bottom: 15px;
+}
+.cardpic1 {
+    width: 230px;
+    height: 280px;
+    background-color: #c7ddea;
+    position: relative;
+    bottom: 35px;
+    border-radius: 5px;
+}
+
+.cardpic2 {
+    width: 230px;
+    height: 280px;
+    background-color: rgb(250, 177, 49);
+    position: relative;
+    bottom: 35px;
+    border-radius: 5px;
+}
+
+.cardpic3 {
+    width: 230px;
+    height: 280px;
+    background-color: #f17949;
+    position: relative;
+    bottom: 35px;
+    border-radius: 5px;
+}
+.smallpics {
+    height: 130px;
+    position: relative;
+    top: 12px;
+}
+
+.cardpic3 img {
+    height: 115px;
+    position: relative;
+    top: 27px;
+}
+
+.howitworks {
+display: flex;
+flex-wrap: wrap;
+font-family: Times, serif;
+font-size: 45px;
+line-height: 1.0;
+margin: 0px;
+width: 1000px;
+
+}
+
+article {
+    margin: 0px;
+    padding: 0px;
+    height: 333px;
+    width: 333px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+}
+article p {
+    align-self: center;
+    padding-top: 30px;
+    text-align: center;
+
+}
+
+article:nth-of-type(1) {
+    background-color: #c7ddea;
+}
+
+article:nth-of-type(3) {
+    background-color: #ebebeb;
+}
+
+article:nth-of-type(5) {
+    background-color: #f17949;
+}
+
+article h3 {
+    margin: 0px;
+    padding: 30px;
+    color: rgb(161, 161, 161);
+}
+article h1 {
+    align-self: center;
+    padding-top: 60px;
+    text-align: center;
+}
+
+.scrollup {
+    box-sizing: border-box;
+    padding: 10px;
+    height: 75px;
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    background-color: #a9a19e;
+    align-items: center;
+}
+.scrollup p {
+    margin: -13px;
+    color: rgba(0, 0, 0, 0.5)
+}
+.scrollup a {
+    margin: -13px;
+    color: rgba(0, 0, 0, 0.5)
+}
+.arrow {
+    font-size: 35px;
+    font-family: Lora;
+    margin: 0px;
+}
+
+footer {
+    width: 1000px;
+    height: 350px;
+    background-color: #777574;
+}
+.contacthead {
+    width: 1000px;
+    height: 350px;
+    background-color: #c7ddea;
+    display: flex;
+    justify-content: center;
+}
+.hellothere {
+    font-size: 40px;
+    margin: 0px;
+    align-self: center;
+}
+.contactform {
+    width: 1000px;
+    height: 600px;
+    background-color: #a9a19e;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.form {
+    padding-top: 100px;
+    
+    align-self: center;
+    width:400px;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+form p {
+    color: rgba(255, 255, 255, 0.7);
+    margin: 5px;
+}
+form button {
+    position: relative;
+    left: 230px;
+}
+.whatsup {
+    box-sizing: border-box;
+    padding: 30px;
+    width:450px;
+    height: 500px;
+    display: flex;
+    font-size: 35px;
+    color: white;
+}
+.whatsup h1 {
+    padding-top: 40px;
+    align-items: center;
+}
+input {
+    width: 350px;
+    padding: 10px;
+    border-radius: 3px;
+    resize: none;
+    border-style: none;
+
+}
+.textbox {
+    width: 370px;
+    height: 200px;
+    border-radius: 3px;
+    border-style: none;
+    resize: none;
+    box-sizing: border-box;
+    padding: 15px;
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    color: black;
+}
+.send {
+   align-items: flex-end;
+}
+.visitus {
+    height: 400px;
+    width: 1000px;
+    background-image: url("./images/map.png");
+    background-size: cover;
+    margin: 0px;
+}
+.visitus h1 {
+    margin:0px;
+}
+.contacthead img {
+    height: 300px;
+    position: relative;
+    left: 170px;
+    top: 54px;
+}
+.contacthead h1 {
+    position: relative;
+    left: 185px;
+}
+.adress {
+    height: 215px;
+    width: 330px;
+    background-color: rgb(250, 177, 49);
+    position: relative;
+    left: 85px;
+    top: 40px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.adress h1 {
+    font-size: 45px;
+    color: white;
+}
+.contactbutton a {
+    font-weight: bold;
+    color: black;
 }
